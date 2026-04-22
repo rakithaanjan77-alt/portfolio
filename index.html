@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakitha Anjan | Digital Solutions Architect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#222841',
+                        brandOrange: '#F29924',
+                        accentGold: '#FFB800',
+                        deepSlate: '#1E293B'
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .grid-pattern {
+            background-image: radial-gradient(#222841 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+            opacity: 0.05;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 20% 50%, rgba(242, 153, 36, 0.05) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 50%, rgba(34, 40, 65, 0.05) 0%, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans antialiased text-navy">
+
+    <!-- Background Decorations -->
+    <div class="fixed inset-0 grid-pattern pointer-events-none -z-10"></div>
+    <div class="fixed inset-0 hero-gradient pointer-events-none -z-10"></div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <header class="fixed inset-x-0 top-0 z-50 glass-nav border-b border-gray-100">
+        <nav class="flex items-center justify-between p-4 lg:px-12 max-w-7xl mx-auto">
+            <div class="flex lg:flex-1">
+                <a href="#" class="group flex items-center gap-1 text-2xl font-extrabold tracking-tighter">
+                    <span class="text-navy group-hover:text-brandOrange transition">i</span>
+                    <span class="text-brandOrange">FIX</span>
+                    <span class="bg-navy text-white px-2 py-0.5 rounded ml-1 text-sm font-bold tracking-normal uppercase">path</span>
+                </a>
+            </div>
+
+            <div class="hidden lg:flex lg:gap-x-10">
+                <a href="#" class="text-sm font-bold text-navy/70 hover:text-brandOrange transition">Home</a>
+                <a href="#services" class="text-sm font-bold text-navy/70 hover:text-brandOrange transition">Services</a>
+                <a href="#portfolio" class="text-sm font-bold text-navy/70 hover:text-brandOrange transition">Portfolio</a>
+                <a href="#pricing" class="text-sm font-bold text-navy/70 hover:text-brandOrange transition">Pricing</a>
+            </div>
+
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+ <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+    <a href="https://wa.me/94713855809" target="_blank" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all duration-200 bg-brandOrange border border-transparent rounded-xl hover:bg-opacity-90">
+        Get Started
+    </a>
+    
+    <a href="https://wa.me/94713855809" target="_blank" class="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-white transition-all duration-200 bg-transparent border-2 border-brandOrange rounded-xl hover:bg-brandOrange hover:text-navy">
+        Contact Me
+    </a>
+</div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-100 px-6 py-4 space-y-3">
+            <a href="#" class="block text-sm font-bold text-navy/70 hover:text-brandOrange transition">Home</a>
+            <a href="#services" class="block text-sm font-bold text-navy/70 hover:text-brandOrange transition">Services</a>
+            <a href="#portfolio" class="block text-sm font-bold text-navy/70 hover:text-brandOrange transition">Portfolio</a>
+            <a href="#pricing" class="block text-sm font-bold text-navy/70 hover:text-brandOrange transition">Pricing</a>
+            <a href="https://wa.me/YOUR_NUMBER" class="block text-center rounded-xl bg-brandOrange px-6 py-3 text-sm font-black text-white">
+                Work with Me
+            </a>
+        </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <main class="flex-grow flex items-center justify-center pt-24 pb-12">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+
+            <!-- Left: Text Content -->
+            <div class="lg:w-3/5 text-center lg:text-left order-2 lg:order-1">
+                <div class="inline-flex items-center gap-2 bg-brandOrange/10 border border-brandOrange/20 px-3 py-1 rounded-full mb-6">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brandOrange opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-brandOrange"></span>
+                    </span>
+                    <span class="text-[10px] font-black tracking-[0.2em] text-brandOrange uppercase">Efficiency . Accuracy . Precision</span>
+                </div>
+
+                <h1 class="text-5xl md:text-8xl font-black tracking-tight text-navy leading-[0.9] mb-6">
+                    Digital <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandOrange to-accentGold italic">Architect.</span>
+                </h1>
+
+                <p class="text-lg md:text-xl font-medium text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-10">
+                    I am <span class="text-navy font-extrabold border-b-2 border-brandOrange/30">Rakitha Anjan</span>.
+                    Engineering high-end IT systems, AI-powered growth strategies, and enterprise digital blueprints for modern visionaries.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12">
+                    <a href="#services" class="w-full sm:w-auto text-center rounded-xl bg-brandOrange px-10 py-5 text-lg font-black text-white shadow-2xl shadow-brandOrange/30 hover:bg-navy transition-all hover:-translate-y-1">
+                        Explore Services
+                    </a>
+                    <a href="#" class="w-full sm:w-auto text-center flex items-center justify-center gap-2 text-sm font-bold text-navy group px-6 py-5">
+                        Download Dossier <span class="transition-transform group-hover:translate-x-1">→</span>
+                    </a>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center justify-center lg:justify-start gap-6 pt-8 border-t border-slate-200">
+                    <span class="text-[10px] font-black tracking-widest text-slate-400 uppercase">Professional Networks</span>
+                    <div class="flex gap-8">
+                        <a target="_blank" href="https://linkedin.com/in/rakitha-anjan-7051143b0" class="group flex items-center gap-2 hover:text-brandOrange transition">
+                            <span class="w-8 h-8 rounded-lg bg-navy flex items-center justify-center group-hover:bg-brandOrange transition">
+                                <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </span>
+                            <span class="text-xs font-bold uppercase tracking-tight">LinkedIn</span>
+                        </a>
+                        <a target="_blank" href="https://github.com/rakithaanjan77-alt" class="group flex items-center gap-2 hover:text-brandOrange transition">
+                            <span class="w-8 h-8 rounded-lg bg-navy flex items-center justify-center group-hover:bg-brandOrange transition">
+                                <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </span>
+                            <span class="text-xs font-bold uppercase tracking-tight">GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Profile Image -->
+            <div class="lg:w-2/5 order-1 lg:order-2 flex justify-center relative">
+                <div class="relative group">
+                    <div class="absolute -top-12 -right-12 w-64 h-64 bg-brandOrange/20 rounded-full blur-[80px] animate-pulse-slow"></div>
+                    <div class="absolute -bottom-12 -left-12 w-64 h-64 bg-navy/10 rounded-full blur-[80px] animate-pulse-slow"></div>
+
+                    <div class="relative z-10">
+                        <div class="absolute -inset-1.5 bg-gradient-to-tr from-brandOrange via-accentGold to-navy rounded-[3rem] opacity-30 group-hover:opacity-100 transition duration-500 blur-sm"></div>
+                        <div class="relative w-72 h-[450px] md:w-[380px] md:h-[520px] overflow-hidden rounded-[2.8rem] border-4 border-white bg-slate-200">
+                            <img src="assets/images/profile.png" alt="Rakitha Anjan" class="w-full h-full object-cover object-top transition duration-1000 group-hover:scale-105 group-hover:rotate-1">
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-40 group-hover:opacity-20 transition duration-500"></div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Badge -->
+                    <div class="absolute -bottom-6 -right-8 z-20 bg-white p-5 rounded-2xl shadow-[0_20px_50px_rgba(34,40,65,0.15)] border border-slate-100 transform group-hover:-translate-y-2 transition duration-500">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-brandOrange/10 flex items-center justify-center">
+                                <svg class="w-5 h-5 text-brandOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Experience</p>
+                                <p class="text-xl font-black text-navy leading-none">12+ Years</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Focus Badge -->
+                    <div class="absolute top-12 -left-10 z-20 bg-navy text-white px-5 py-3 rounded-xl shadow-2xl transform rotate-[-4deg] group-hover:rotate-0 transition duration-500">
+                        <p class="text-[10px] font-bold text-brandOrange uppercase tracking-tighter mb-0.5">Focus</p>
+                        <p class="text-xs font-black">AI & Enterprise Systems</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ===== STATS BAR ===== -->
+    <section class="max-w-7xl mx-auto w-full px-6 py-12">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 bg-white/50 backdrop-blur-sm border border-white/50 p-8 rounded-[2rem] shadow-sm">
+            <div class="text-center">
+                <p class="text-4xl font-black text-navy leading-none mb-2">50+</p>
+                <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Solutions Deployed</p>
+            </div>
+            <div class="text-center border-l border-slate-200">
+                <p class="text-4xl font-black text-navy leading-none mb-2">99%</p>
+                <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">System Accuracy</p>
+            </div>
+            <div class="text-center border-l border-slate-200">
+                <p class="text-4xl font-black text-navy leading-none mb-2">12</p>
+                <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Industry Awards</p>
+            </div>
+            <div class="text-center border-l border-slate-200">
+                <p class="text-4xl font-black text-navy leading-none mb-2">24/7</p>
+                <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Expert Support</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES SECTION ===== -->
+    <section id="services" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-xs font-black tracking-[0.3em] text-brandOrange uppercase mb-4">What I Offer</h2>
+                <p class="text-4xl md:text-5xl font-black text-navy tracking-tighter leading-none">
+                    Core <span class="text-brandOrange">Services.</span>
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+
+                <div class="relative p-10 bg-white rounded-[3rem] shadow-xl hover:shadow-2xl transition duration-500 border-t-4 border-navy">
+                    <h3 class="text-2xl font-black text-navy mb-4 uppercase">Ecosystems</h3>
+                    <p class="text-slate-500 text-sm mb-6 leading-relaxed">Designing complex Web & ERP architectures that drive business efficiency with 100% accuracy.</p>
+                    <ul class="text-xs font-bold text-brandOrange space-y-2">
+                        <li>• CUSTOM WEB SOLUTIONS</li>
+                        <li>• ERP INTEGRATIONS</li>
+                    </ul>
+                </div>
+
+                <div class="relative p-10 bg-navy rounded-[3rem] shadow-xl hover:shadow-2xl transition duration-500 text-white transform md:scale-110 z-10">
+                    <div class="absolute top-6 right-8 text-brandOrange animate-pulse text-xs font-bold">● SOS Ready</div>
+                    <h3 class="text-2xl font-black mb-4 uppercase">Smart Apps</h3>
+                    <p class="text-slate-300 text-sm mb-6 leading-relaxed">High-end mobile applications integrated with AI intelligence and emergency safety protocols.</p>
+                    <ul class="text-xs font-bold text-brandOrange space-y-2">
+                        <li>• IOS & ANDROID MASTERY</li>
+                        <li>• REAL-TIME ALERTS</li>
+                    </ul>
+                </div>
+
+                <div class="relative p-10 bg-white rounded-[3rem] shadow-xl hover:shadow-2xl transition duration-500 border-t-4 border-brandOrange">
+                    <h3 class="text-2xl font-black text-navy mb-4 uppercase">Consulting</h3>
+                    <p class="text-slate-500 text-sm mb-6 leading-relaxed">Strategic blueprints, brand numerology, and cinematic media production to scale your identity.</p>
+                    <ul class="text-xs font-bold text-brandOrange space-y-2">
+                        <li>• NUMEROLOGICAL BRANDING</li>
+                        <li>• CINEMATIC MEDIA</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PHILOSOPHY SECTION ===== -->
+    <section id="features" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-end justify-between mb-16 gap-6">
+                <div class="max-w-2xl">
+                    <h2 class="text-xs font-black tracking-[0.3em] text-brandOrange uppercase mb-4">Core Philosophy</h2>
+                    <p class="text-4xl md:text-6xl font-black text-navy tracking-tighter leading-none">
+                        Engineering Growth with <span class="text-brandOrange">Technical Precision.</span>
+                    </p>
+                </div>
+                <p class="text-slate-500 max-w-sm text-sm border-l-2 border-brandOrange pl-6">
+                    We design and deploy future-proof digital assets that combine operational efficiency with cutting-edge AI integration.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 border-t border-slate-100 pt-16">
+                <div>
+                    <span class="text-5xl font-black text-slate-100 mb-6 block">01</span>
+                    <h3 class="text-xl font-black text-navy mb-4 uppercase tracking-tight">Absolute Accuracy</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        Our engineering background ensures that every logic, every database entry, and every pixel is delivered with 100% precision.
+                    </p>
+                </div>
+                <div>
+                    <span class="text-5xl font-black text-slate-100 mb-6 block">02</span>
+                    <h3 class="text-xl font-black text-navy mb-4 uppercase tracking-tight">Scalable Architecture</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        We build systems that grow with your business. Our architectures are designed to handle expansion without compromising performance.
+                    </p>
+                </div>
+                <div>
+                    <span class="text-5xl font-black text-slate-100 mb-6 block">03</span>
+                    <h3 class="text-xl font-black text-navy mb-4 uppercase tracking-tight">Strategic Intelligence</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">
+                        Integrating Pythagorean Numerology and AI analytics to ensure your brand name and digital strategy align with market success.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PORTFOLIO SECTION ===== -->
+    <section id="portfolio" class="py-24 bg-slate-50 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 max-w-2xl mx-auto">
+                <h2 class="text-xs font-black tracking-[0.3em] text-brandOrange uppercase mb-4">Case Studies</h2>
+                <p class="text-4xl md:text-5xl font-black text-navy tracking-tighter leading-none">
+                    Proven <span class="text-brandOrange">Results.</span>
+                </p>
+            </div>
+
+            <div class="relative group p-6 bg-white rounded-[3rem] shadow-2xl border border-gray-100 hover:border-brandOrange transition duration-500">
+                <div class="w-full aspect-[16/9] rounded-[2rem] overflow-hidden bg-slate-100">
+                    <img src="assets/images/portfolio-showcase.png" alt="iFIXpath Portfolio" class="w-full h-full object-cover">
+                </div>
+
+                <div class="mt-12 px-6 pb-6 text-center">
+                    <h4 class="text-2xl font-black text-navy mb-4">The iFIXpath Digital Blueprint</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed max-w-4xl mx-auto">
+                        A comprehensive look at our multi-sector expertise. From high-performance ERP systems for <strong>Tinulak Holdings</strong> to the wellness-focused <strong>Olit Go Mobile App</strong>, our solutions are defined by accuracy, reliability, and strategic precision. Whether it's the high-fidelity web design of <strong>Wixpannel</strong> or the retail-ready <strong>Wish Creation POS</strong>, we deliver digital assets that perform.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS SECTION ===== -->
+    <section id="testimonials" class="py-24 bg-navy relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-brandOrange/5 rounded-full blur-3xl -mr-48 -mt-48"></div>
+
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-xs font-black tracking-[0.3em] text-brandOrange uppercase mb-4">Client Feedback</h2>
+                <p class="text-4xl md:text-5xl font-black text-white tracking-tighter">Voice of <span class="text-brandOrange">Precision.</span></p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <!-- Column 1 -->
+                <div class="space-y-6">
+                    <div class="p-8 bg-white/5 border border-white/10 rounded-[2.5rem] hover:border-brandOrange/50 transition duration-500">
+                        <p class="text-slate-300 text-sm italic mb-6">"iFIXpath team එකේ ERP system එක නිසා අපේ operations සෑහෙන්න ලේසි වුණා. Accurate data management at its peak! Highly recommended."</p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150&h=150&auto=format&fit=crop" class="w-10 h-10 rounded-full object-cover border border-brandOrange/30" alt="Dineshani">
+                            <div>
+                                <h4 class="text-white font-bold text-xs uppercase">Dineshani</h4>
+                                <p class="text-brandOrange text-[10px]">Founder, DINRU</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8 bg-white/5 border border-white/10 rounded-[2.5rem]">
+                        <p class="text-slate-300 text-sm italic mb-6">"App එකේ smooth ගතිය මරු. UX එක නියමයි!"</p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=150&h=150&auto=format&fit=crop" class="w-10 h-10 rounded-full object-cover border border-brandOrange/30" alt="Saman">
+                            <div>
+                                <h4 class="text-white font-bold text-xs uppercase">Saman Kumara</h4>
+                                <p class="text-brandOrange text-[10px]">Operations Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 (Featured) -->
+                <div class="space-y-6">
+                    <div class="p-10 bg-white/10 border border-brandOrange/30 rounded-[3rem] shadow-2xl">
+                        <p class="text-white text-lg font-medium italic mb-8">
+                            "Business blueprinting part එකෙන් ලොකු help එකක් ලැබුණා. අපේ අලුත් branding එකට Pythagorean Numerology පාවිච්චි කරපු එක සෑහෙන්න වෙනසක් කළා. Strategic and Precise!"
+                        </p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&h=200&auto=format&fit=crop" class="w-12 h-12 rounded-full object-cover border-2 border-brandOrange" alt="Surangi">
+                            <div>
+                                <h4 class="text-white font-black text-sm uppercase">Surangi Perera</h4>
+                                <p class="text-brandOrange text-xs font-bold">Director, KITEA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="space-y-6">
+                    <div class="p-8 bg-white/5 border border-white/10 rounded-[2.5rem]">
+                        <p class="text-slate-300 text-sm italic mb-6">"POS system එකෙන් අපේ විකුණුම් වාර්තා ලේසියෙන්ම ගන්න පුළුවන්. Highly efficient service."</p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&h=150&auto=format&fit=crop" class="w-10 h-10 rounded-full object-cover border border-brandOrange/30" alt="Amila">
+                            <div>
+                                <h4 class="text-white font-bold text-xs uppercase">Amila Jayans</h4>
+                                <p class="text-brandOrange text-[10px]">Wish Creation</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8 bg-white/5 border border-white/10 rounded-[2.5rem]">
+                        <p class="text-slate-300 text-sm italic mb-6">"Web design එක පට්ට. Mobile responsive එකත් හරියටම තියෙනවා."</p>
+                        <div class="flex items-center gap-4">
+                            <img src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?q=80&w=150&h=150&auto=format&fit=crop" class="w-10 h-10 rounded-full object-cover border border-brandOrange/30" alt="Kasun">
+                            <div>
+                                <h4 class="text-white font-bold text-xs uppercase">Kasun</h4>
+                                <p class="text-brandOrange text-[10px]">Tech Lead</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRICING SECTION ===== -->
+    <section id="pricing" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-xs font-black tracking-[0.3em] text-brandOrange uppercase mb-4">Investment</h2>
+                <p class="text-4xl md:text-5xl font-black text-navy tracking-tighter leading-none">
+                    Transparent <span class="text-brandOrange">Pricing.</span>
+                </p>
+                <p class="text-slate-500 text-sm mt-4 max-w-xl mx-auto">Custom solutions tailored to your business scale. Every package is a precision-engineered investment.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <div class="p-10 bg-slate-50 rounded-[2.5rem] border border-slate-200 hover:border-brandOrange/30 transition duration-500">
+                    <p class="text-xs font-black tracking-widest text-slate-400 uppercase mb-4">Starter</p>
+                    <p class="text-5xl font-black text-navy mb-2">$499</p>
+                    <p class="text-slate-500 text-xs mb-8">One-time setup</p>
+                    <ul class="space-y-3 text-sm text-slate-600 mb-10">
+                        <li class="flex items-center gap-2"><span class="text-brandOrange font-black">✓</span> Custom Web Design</li>
+                        <li class="flex items-center gap-2"><span class="text-brandOrange font-black">✓</span> Mobile Responsive</li>
+                        <li class="flex items-center gap-2"><span class="text-brandOrange font-black">✓</span> 30 Days Support</li>
+                        <li class="flex items-center gap-2"><span class="text-slate-300 font-black">✗</span> ERP Integration</li>
+                        <li class="flex items-center gap-2"><span class="text-slate-300 font-black">✗</span> AI Features</li>
+                    </ul>
+ <a href="https://wa.me/94713855809?text=I'm%20interested%20in%20the%20Starter%20Plan" target="_blank" class="block w-full text-center rounded-xl border-2 border-navy px-6 py-4 text-sm font-black text-navy hover:bg-navy hover:text-white transition-all">
+    Get Started
+</a> 
+                </div>
+
+                <div class="p-10 bg-navy rounded-[2.5rem] shadow-2xl shadow-navy/30 transform md:scale-105 z-10 relative">
+                    <div class="absolute top-6 right-8 bg-brandOrange text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider">Popular</div>
+                    <p class="text-xs font-black tracking-widest text-brandOrange uppercase mb-4">Professional</p>
+                    <p class="text-5xl font-black text-white mb-2">$1,499</p>
+                    <p class="text-slate-400 text-xs mb-8">One-time setup</p>
+                    <ul class="space-y-3 text-sm text-slate-300 mb-10">
+                        <li class="flex items-center gap-2"><span class="text-brandOrange font-black">✓</span> Everything in Starter</li>
+                        <li class="flex items-center gap-2"><span class="text-brandOrange font-black">✓</span> ERP Integration</li>
+                        <li class="flex items-center gap-2"><span class="text-brandOrange font-black">✓</span> Mobile App (iOS/Android)</li>
+                        <li class="flex items-center gap-2"><span class="text-brandOrange font-black">✓</span> 90 Days Support</li>
+                        <li class="flex items-center gap-2"><span class="text-slate-500 font-black">✗</span> AI Analytics</li>
+                    </ul>
+<a href="https://wa.me/94713855809?text=I'm%20interested%20in%20the%20Professional%20Plan" target="_blank" class="block w-full text-center rounded-xl bg-brandOrange px-6 py-4 text-sm font-black text-white hover:bg-white hover:text-navy transition-all">
+    Get Started
+</a>
+                </div>
+
+                <div class="p-10 bg-slate-50 rounded-[2.5rem] border border-slate-200 hover:border-brandOrange/30 transition duration-500">
+                    <p class="text-xs font-black tracking-widest text-slate-400 uppercase mb-4">Enterprise</p>
+                    <p class="text-5xl font-black text-navy mb-2">Custom</p>
+                    <p class="text-slate-500 text-xs mb-8">Contact for pricing</p>
+                    <ul class="space-y-3 text-sm text-slate-600 mb-10">
+                        <li class="flex items-center gap-2"><span class="text-brandOrange font-black">✓</span> Everything in Pro</li>
+                        <li class="flex items-center gap-2"><span class="text-brandOrange font-black">✓</span> AI Analytics & Strategy</li>
+                        <li class="flex items-center gap-2"><span class="text-brandOrange font-black">✓</span> Numerological Branding</li>
+                        <li class="flex items-center gap-2"><span class="text-brandOrange font-black">✓</span> Cinematic Media</li>
+                        <li class="flex items-center gap-2"><span class="text-brandOrange font-black">✓</span> 24/7 Dedicated Support</li>
+                    </ul>
+  <a href="https://wa.me/94713855809?text=I'm%20interested%20in%20the%20Enterprise%20Plan" target="_blank" class="block text-center rounded-xl border-2 border-navy px-6 py-4 text-sm font-black text-navy hover:bg-navy hover:text-white transition-all">
+    Contact Me
+</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER / CTA ===== -->
+    <footer class="py-16 bg-navy text-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <a href="#" class="group flex items-center justify-center gap-1 text-2xl font-extrabold tracking-tighter mb-6">
+                <span class="text-white group-hover:text-brandOrange transition">i</span>
+                <span class="text-brandOrange">FIX</span>
+                <span class="bg-white text-navy px-2 py-0.5 rounded ml-1 text-sm font-bold tracking-normal uppercase">path</span>
+            </a>
+            <p class="text-slate-400 text-sm mb-8">Engineering precision. Delivering results.</p>
+            <div class="flex items-center justify-center gap-6 mb-8">
+               <div class="flex items-center justify-center gap-6 mt-8">
+    <a href="https://linkedin.com/in/rakithaanjan" target="_blank" class="text-sm font-bold tracking-widest text-white/70 hover:text-white transition-colors uppercase">Linkedin</a>
+    <a href="https://github.com/rakithaanjan" target="_blank" class="text-sm font-bold tracking-widest text-white/70 hover:text-white transition-colors uppercase">Github</a>
+    <a href="https://facebook.com/rakitha.anju" target="_blank" class="text-sm font-bold tracking-widest text-white/70 hover:text-white transition-colors uppercase">Facebook</a>
+</div>
+        </div>
+            </div>
+            <p class="text-slate-600 text-xs">© 2025 iFIXpath by Rakitha Anjan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
